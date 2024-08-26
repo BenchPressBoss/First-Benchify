@@ -1,0 +1,33 @@
+@import '../../../assets/styles/_variables.scss';
+
+.songButton {
+  width: 180px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: $white-color;
+  cursor: pointer;
+
+  .img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+
+  .info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    h3 {
+      font-size: 13px;
+      font-weight: 400;
+    }
+    p {
+      color: $description-color;
+      font-size: 12px;
+    }
+  }
+}

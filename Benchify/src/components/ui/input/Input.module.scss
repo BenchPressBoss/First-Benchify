@@ -1,0 +1,19 @@
+@import '../../../assets/styles/_variables.scss';
+
+.input {
+  width: 450px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid darken($border-color, 10%);
+  background-color: $sidebar-color;
+  color: $white-color;
+  padding: 20px 20px 20px 20px;
+
+  &:focus {
+    outline: 1px solid lighten($description-color, 30%);
+  }
+
+  &::placeholder {
+    color: $description-color;
+  }
+}

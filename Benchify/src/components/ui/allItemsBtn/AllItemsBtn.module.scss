@@ -1,0 +1,16 @@
+@import '../../../assets/styles/variables.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  color: $white-color;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  font-size: 15px;
+  width: 100px;
+  padding: 10px 0px 10px 10px;
+  justify-content: end;
+  background-color: transparent;
+}

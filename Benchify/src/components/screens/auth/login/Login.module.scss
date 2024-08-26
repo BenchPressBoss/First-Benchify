@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/_variables.scss';
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 70px;
+		backdrop-filter: blur(70px);
+		background-color: $sidebar-color;
+		border-radius: 30px;
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		.input {
+			width: 250px;
+			margin-bottom: 15px;
+		}
+	}
+	.singUpLink {
+		font-size: 12px;
+		padding: 5px;
+		margin-top: 10px;
+		transition: background 1s ease;
+		transition: color 0.4s ease;
+	}
+	.singUpLink:hover {
+		background-color: rgba(111, 111, 111, 0) !important;
+		color: lighten($description-color, 30%);
+	}
+}

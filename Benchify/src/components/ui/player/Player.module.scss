@@ -1,0 +1,176 @@
+@import '@assets/variables';
+@import 'react-h5-audio-player/lib/styles.css';
+
+.wrapper {
+	width: calc(100vw - 450px);
+	height: 110px;
+
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 50px;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 40px 0 20px;
+	border: 1px solid $description-color;
+	background-color: $bg-extra-color;
+
+	.musicButton {
+		width: 250px;
+		background-color: lighten($bg-extra-color, 10%);
+	}
+
+	.controlPanel {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.buttons {
+			display: flex;
+			gap: 10px;
+			margin-bottom: 5px;
+		}
+
+		.progress {
+			display: flex;
+			align-items: center;
+			justify-content: cen;
+			.progressBar {
+				width: 20vw;
+				height: 6px;
+				border-radius: 6px;
+				-webkit-appearance: none;
+				appearance: none;
+				outline: none;
+				overflow: hidden;
+				margin: 0 10px 0 10px;
+				cursor: pointer;
+
+				&::-webkit-slider-runnable-track {
+					background: #6b6b6b; /* Цвет фона трека */
+					height: 6px;
+					border-radius: 6px;
+				}
+
+				&::-webkit-slider-thumb {
+					-webkit-appearance: none;
+					width: 16px;
+					height: 6px;
+					background: rgb(235, 235, 235); /* Цвет ползунка */
+					border-radius: 5px;
+					cursor: grab;
+				}
+			}
+		}
+	}
+
+	.volumeControl {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		gap: 10px;
+
+		> img {
+			width: 30px;
+			height: 30px;
+		}
+
+		.volumeSlider {
+			width: 7vw;
+			height: 6px;
+			border-radius: 6px;
+			-webkit-appearance: none;
+			appearance: none;
+			background-color: #818181;
+			outline: none;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		.volumeSlider::-webkit-slider-thumb {
+			width: 10px;
+			height: 6px;
+			background: rgb(235, 235, 235);
+			border-radius: 5px;
+			cursor: grab;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+
+		.progress {
+			font-size: 12px;
+			.progressBar {
+				width: 60vw !important;
+			}
+		}
+		.musicButton {
+			display: none;
+		}
+		.volumeControl {
+			display: none;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.wrapper {
+		width: calc(100vw - 60px) !important;
+		height: 100px !important;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.wrapper {
+		width: calc(100vw - 350px);
+		height: 100px;
+
+		.volumeControl {
+			width: 30px;
+		}
+		.idk {
+			display: none;
+		}
+		.musicButton {
+			width: 170px !important;
+			font-size: 15px !important;
+		}
+	}
+}
+@media (max-width: 1400px) {
+	.wrapper {
+		.musicButton {
+			width: 200px;
+			height: 60px;
+			padding: 10px;
+			font-size: 15px;
+
+			> img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.controlPanel {
+			.progressBar {
+				width: 300px;
+			}
+		}
+
+		.volumeControl {
+			.volumeSlider {
+				display: none;
+			}
+		}
+	}
+}

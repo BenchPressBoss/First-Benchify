@@ -1,0 +1,42 @@
+@import '../../../../assets/styles/_variables.scss';
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.wrapper {
+  margin-top: 10px;
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .likedTracksBtn {
+      justify-content: start;
+      padding-left: 0;
+    }
+  }
+  .scrollContainer {
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    .scrollText {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: scroll 6s linear infinite;
+    }
+  }
+  .button {
+    margin-top: 20px;
+  }
+}

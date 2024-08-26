@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables';
+
+.layout {
+  border-radius: 30px;
+  border: 2px solid $border-color;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 60px);
+  height: calc(100vh - 60px);
+
+  .mainBlock {
+    backdrop-filter: blur(55px);
+    flex: 1;
+    border-radius: 0 30px 30px 0;
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+      display: flex;
+      flex: 1; /* Растягиваем .content на всю высоту .mainBlock */
+      justify-content: space-between;
+      padding: 40px;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '@assets/styles/variables';
+
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background 1s ease;
+}
+.button:hover {
+  background-color: $hover-btn-color;
+}

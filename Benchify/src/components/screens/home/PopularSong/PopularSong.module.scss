@@ -1,0 +1,41 @@
+@import '/src/assets/styles/variables';
+
+.wrapper {
+  height: 30vh;
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h4 {
+      font-weight: 400;
+    }
+
+    .allTrackBtn {
+      width: 100px;
+      padding: 10px 0px 10px 10px;
+      justify-content: end;
+    }
+  }
+
+  .tracks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+    .trackButton {
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      > P {
+        position: absolute;
+      }
+      > img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

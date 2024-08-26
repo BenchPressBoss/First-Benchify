@@ -1,0 +1,49 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+	padding: 40px 40px 0 40px;
+
+	.userButtons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.userButtons {
+		display: flex;
+		justify-content: space-between;
+		width: 100px;
+
+		.settingsIcon {
+			width: 40px;
+			height: 40px;
+
+			& > svg {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.userImg {
+			width: 40px;
+			height: 40px;
+			border-radius: 50px;
+		}
+	}
+	.authBlock {
+		display: flex;
+		flex-direction: row;
+		width: calc(100% - 80px);
+		justify-content: center;
+
+		.button {
+			display: flex;
+			justify-content: center;
+			width: 200px;
+			margin-right: 50px;
+		}
+	}
+}
