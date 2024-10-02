@@ -1,1 +1,1 @@
-Spotify 2.0 with spofity api. First version 
+Spotify 2.0 with spofity api. First version (fast version)
